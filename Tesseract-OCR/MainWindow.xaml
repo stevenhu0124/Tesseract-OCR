@@ -1,0 +1,22 @@
+﻿<Window x:Class="Tesseract_OCR.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tesseract_OCR"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal" Margin="20">
+            <Button Content="Start Detect" Click="StartDetect" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <StackPanel Orientation="Horizontal" Margin="30,0">
+                <Label Content="Covert Text:" Height="50" Margin="0,10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox Height="50" Width="150" TextWrapping="Wrap" Text="{Binding CaputreText}" Margin="0,10" IsReadOnly="True"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock FontSize="16" Text="1. Try to make an overlay feature in WPF, so that it could select which side to convert to text."/>
+            <TextBlock FontSize="16" Text="2. Improve recognition rate.(1.Trainng the tessdat 2. Gray out the image,)"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
